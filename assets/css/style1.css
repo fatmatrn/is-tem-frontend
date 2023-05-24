@@ -26,7 +26,14 @@ main div.container div.row div[class^="col"] div.card img {
     width: 150px;
     height: auto;
 }
-
-main div.container div.row div[class^="col"] {
-    width: 18rem;
+footer{
+    background-color: #dde7e7;
+}
+#cizgi{
+    border-right: 1px solid black;
+}
+#cizgi a,
+#footsosyal a{
+   text-decoration: none;
+   color:#18b8ba
 }
