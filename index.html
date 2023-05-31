@@ -39,34 +39,59 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
+            id="navbar-example2"
+            class="collapse navbar-collapse bg-body-tertiary justify-content-center "
           >
-            <ul class="navbar-nav social mb-2 mb-lg-0 fs-4">
+            <ul class="nav nav-pills gap-3">
+              <li class="nav-item">
+                <a class="nav-link bg-success-subtle p-0 m-0" href="#koltuk">Koltuk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-success-subtle  p-0 m-0" href="#hali">Halı</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-success-subtle  p-0 m-0" href="#perde">Perde</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-success-subtle  p-0 m-0" href="#yatak">Yatak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-success-subtle  p-0 m-0" href="#araba">Araba</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end offcanvas offcanvas-start"
+            id="navbarSupportedContent"
+            data-bs-scroll="true"
+            tabindex="-1"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+          >
+            <ul class="navbar-nav social mb-2 mb-lg-0 fs-4 offcanvas-body">
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa-brands fa-whatsapp"></i>
+                  <i class="fa-brands fa-whatsapp"></i> <span class="d-lg-none fs-5"> WhatsApp</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-facebook"></i><span class="d-lg-none fs-5"> Facebook</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-twitter"></i><span class="d-lg-none fs-5"> Twitter</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-instagram"></i><span class="d-lg-none fs-5 ps-1"> Instagram</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="fa-solid fa-phone"></i>
-                  <span class="fs-6 text-danger"> 0 835 987 65 43</span>
+                  <span class="fs-5">0 835 987 65 43</span>
                 </a>
               </li>
             </ul>
@@ -271,7 +296,14 @@
         </div>
       </div>
 
-      <section class="container my-3 fs-5 fw-normal">
+      <section
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example2"
+        data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true"
+        tabindex="0"
+        class="container my-3 fs-5 fw-normal scrollspy-example"
+      >
         <div class="row align-items-center">
           <div class="koltuk my-3" id="koltuk">
             <h2>Koltuk Temizleme</h2>
@@ -373,7 +405,7 @@
           <div class="araba my-3" id="araba">
             <h2>Araba Koltuğu Temizleme</h2>
           </div>
-          <div class="col-4 my-2">
+          <div class="col-12 col-md-4 col-lg-4 my-2">
             <p>
               Profesyonel araba koltuğu temizleme hizmetimiz, toz, leke ve kötü
               kokuların biriktiği araba koltuklarınızı tazeler. Özel
@@ -382,7 +414,7 @@
               hem de daha temiz ve ferah bir sürüş deneyimi sunarız.
             </p>
           </div>
-          <div class="col-5 my-2">
+          <div class="col-9 col-md-7 col-lg-5 my-2">
             <img src="assets/img/araba1.jpg" class="img-fluid" />
           </div>
         </div>
@@ -397,7 +429,7 @@
           <div class="col-8" id="cizgi">
             <div class="row">
               <div class="col-4">
-                <img src="assets/img/foot-logo.png" class="img-fluid" />
+                <img src="assets/img/foot-logo.png" class="ms-3 img-fluid" />
               </div>
               <div class="col-4">
                 <ul class="list-unstyled ps-4">
@@ -420,14 +452,25 @@
             </div>
           </div>
           <div class="col-4" id="footsosyal">
-            <ul class="list-unstyled d-flex gap-3 fs-4 justify-content-center ">
-              <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa-solid fa-phone me-3"></i>
-                  <span class="fs-5">0 835 987 65 43</span></a></li>
-        
+            <ul class="list-unstyled d-flex gap-3 fs-4 justify-content-center">
+              <li>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-phone me-3"></i>
+                  <span class="fs-5">0 835 987 65 43</span></a
+                >
+              </li>
             </ul>
           </div>
         </div>

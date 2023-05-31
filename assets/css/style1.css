@@ -26,6 +26,7 @@ main div.container div.row div[class^="col"] div.card img {
     width: 150px;
     height: auto;
 }
+
 footer{
     background-color: #dde7e7;
 }
@@ -35,5 +36,6 @@ footer{
 #cizgi a,
 #footsosyal a{
    text-decoration: none;
-   color:#18b8ba
+   color:#12098b;
+   font-weight: 500;
 }
